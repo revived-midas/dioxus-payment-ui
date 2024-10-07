@@ -1,0 +1,31 @@
+[package]
+name = "myproject"
+version = "0.1.1"
+authors = ["richardducan <richardducan62@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "0.4.0" }
+dioxus-web = { version = "0.4.0" }
+# wasm-logger = "0.2.0"
+# wasm-bindgen = "0.2.78"
+# log = "0.4.14"
+# console_error_panic_hook = "*"
+# im-rc = "15.0.0"
+# tokio = { version = "1.4", features = [] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+dioxus-web = "0.4"
+# wasm-bindgen = "0.2"
+# getrandom = { version = "0.2", features = ["js"] }
+
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+# Desktop-specific dependencies
+# gtk-sys="0.16.0"
+dioxus-desktop = "0.4"
+# tauri = { version = "1.6.3", features = ["wry"] }
+# gdk-sys = { version = "0.16" }
+# rfd = "0.11.3"

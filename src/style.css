@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: left;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+.payment-method {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.payment-toggle {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 5px 0 0 5px;
+    transition: background-color 0.3s;
+}
+
+.payment-toggle:not(:last-child) {
+    margin-right: 5px;
+}
+
+.payment-toggle.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.chain-select,
+.address-input,
+.amount-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.address-input-group {
+    display: flex;
+    align-items: center;
+}
+
+.qr-button {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.qr-button:hover {
+    background-color: #ffffff;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #080808;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #080808;
+}
+
+.toggle-group {
+    display: inline-flex;
+    background-color: #dddddd; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2px; /* Spacing inside the container */
+    width: 100%;
+    margin-bottom:15px;
+}
+
+.toggle-btn {
+    border: none;
+    padding: 10px 20px; /* Adjust padding for spacing */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666; /* Light gray text */
+    background-color: transparent; /* Inactive buttons have transparent background */
+    width: 50%;
+    height: 35px;
+}
+
+.toggle-btn.active {
+    background-color: white; /* White background for the active button */
+    color: black; /* Dark text for the active button */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow for the active button */
+}
+
+.toggle-btn.inactive:hover {
+    background-color: #e0e0e0; /* Hover effect for inactive buttons */
+}
+
+.internal-text{
+    margin-top: 30px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
